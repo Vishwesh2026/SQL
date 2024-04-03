@@ -206,6 +206,88 @@ select to_char(hiredate,'YYYY'),count(*) from emp group by to_char(hiredate,'YYY
 
 create view sales_staff as select empno,ename,deptno from emp where deptno =10;
 
+--  20.create a view that joins data from the emp and dept tables
+
+create view divison1_staff as select ename,empno,job,dname from emp,dept where emp.deptno in(10,30) and emp.deptno = dept.deptno;
+
+--  21.Drop a view names SALES_STAFF
+drop view SALES_STAFF;
+
+
+
+
+
+
+--  exp4
+
+
+
+select abs(-9) from dual;
+
+select ceil(18.23) from dual;
+
+select floor(18.23) from dual;
+
+select sqrt(576) from dual;
+
+select mod(17,5) from dual;
+
+select power(3,3) from dual;
+
+select round(14.5264,2) from dual;
+
+select truncate(10.109934243,4) from dual;
+
+select least(5,8,3,2,1,34,4,324,43,2) from dual;
+
+select INITCAP('Andhra pradesh') from dual;
+
+select lower('THE PEN IS MIGHTER THAT THE SWORD') from dual;
+
+select upper('the pen is mighter than the sword') from dual;
+
+select concat('hello','every one') from dual;
+
+select length('fortune favours the hold') from dual;
+
+select substr('There is no such thing as a free lunch',13,4) from dual;
+
+select instr('There is no suh thing as a free lunch','re',1,1) from dual;
+
+select instr('There is no suh thing as a free lunch','re',1,2) from dual;
+
+select translate('delhi is the capital of india','i','a') from dual;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
